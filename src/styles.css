@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*Criar temas para variáveis, para setar os temas que serão utilizados em todo o site*/
+:root{
+  --background-color: #EAEAEA;
+  --primary-color: #EA1D25;
+  --secondary-color: #FFFFFF;
+  --text-color: #5C6369;
+  --text-color2: rgba(92, 99, 105, 0.45);
+  --positive-variation-color:#87D883;
+  --negative-variation-color:#F55A5F;
+}
+
+*{
+  /*Permite que campos de componentes sejam bem definidos*/
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: var(--background-color);
+  font-family: 'Segoe UI', sans-serif;
+}

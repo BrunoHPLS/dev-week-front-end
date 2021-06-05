@@ -1,0 +1,26 @@
+.header{
+  /*Tamanho e cor da barra atrás do header*/
+ width: 100%;
+ /*1 rem = 16 px, rem é uma medida que é relativa ao tamanho da fonte do navegador, quando se aumenta a fonte
+ se aumentam os ícones do site também*/
+ /*        top  right  bot  left*/
+ padding: 1rem 1.5rem 1rem 1.5rem;
+ background-color: var(--primary-color);
+
+/*Display flex é uma forma de posicionar os elementos de algum jeito dentro de um contêiner*/
+ display: flex;
+ /*Flex direction pra saber em qual direção que ele vai alinhar, row significa que é horizontal*/
+ flex-direction: row;
+ /*todos os itens serão alinhados no início dessa flex box, no caso, no header. justify content alinha na horizontal*/
+justify-content: flex-start;
+/*Alinha na vertical*/
+align-items: center;
+}
+/*Media QUery, uma feature do css que vai tornar o site mais dinâmico. Nesse caso, a regra do css vai mudar
+quando a largura da tela for menor que a de um tablet */
+@media screen and (max-width: 768px){
+.header{
+/*até a tela do dispositivo tiver a largura de 768px, o justify content vai ser no centro*/
+justify-content: center;
+}
+}
